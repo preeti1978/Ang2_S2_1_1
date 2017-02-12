@@ -1,0 +1,20 @@
+<html>
+<head>
+<script>
+let user={first:'junk',last:'junk',dob:'12-Jul-1999'};//Create Object destructuring for user where user has: 1. First Name, 2. Last Name, 3. Date of Birth,
+
+let obj = { first: 'Avnesh', last: 'Shakya' };//then assign this object in other object
+Object.assign(user,obj);
+
+let {first: f, last: l} = obj;//first = avnesh last= shakya
+
+
+function displayFullNameWithDOB(){
+	console.log(obj["first"]+" "+obj["last"]+" "+user["dob"]);
+
+}
+displayFullNameWithDOB();
+</script>
+<body>
+</body>
+</html>
